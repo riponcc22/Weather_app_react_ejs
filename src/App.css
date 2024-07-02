@@ -1,38 +1,80 @@
 .App {
   text-align: center;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+form {
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input {
+  padding: 10px;
+  font-size: 16px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button {
+  padding: 10px;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+h2 {
+  margin: 20px 0;
+}
+
+p {
+  font-size: 18px;
+}
+
+.error {
+  color: red;
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 50%;
+}
+
+td {
+  color: rgb(0, 255, 34);
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #580707;
+  text-align: left;
+ 
+}
+/* App.css */
+
+
+/* App.css */
+.App {
+  background-color: #81aab6; /* Light blue background color */
+  min-height: 100vh; /* Ensure it covers the full viewport height */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: Arial, sans-serif; /* Add some basic styling */
+  padding-top: 60px; /* Adjust for fixed header */
+  padding-bottom: 40px; /* Adjust for fixed footer */
 }
 
-.App-link {
-  color: #61dafb;
+.error {
+  color: red;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+main {
+  flex: 1; /* Ensure main content takes up available space */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
