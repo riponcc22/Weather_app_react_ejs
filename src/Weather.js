@@ -11,30 +11,32 @@ const Weather = ({ data }) => {
     <div>
       <h2>Weather in {data.name}</h2>
       <p>{formattedDate} {formattedTime}</p>
-      <table>
-        <tbody>
-          <tr>
-            <td>Temperature:</td>
-            <td>{data.main.temp} °C</td>
-          </tr>
-          <tr>
-            <td>Weather:</td>
-            <td>{data.weather[0].description}</td>
-          </tr>
-          <tr>
-            <td>Humidity:</td>
-            <td>{data.main.humidity} %</td>
-          </tr>
-          <tr>
-            <td>Wind Speed:</td>
-            <td>{data.wind.speed} m/s</td>
-          </tr>
-          <tr>
-            <td>Pressure:</td>
-            <td>{data.main.pressure} hPa</td>
-          </tr>
-        </tbody>
-      </table>
+      <table style={{ width: '100%', fontSize: '1.5em', padding: '10px', borderCollapse: 'collapse' }}>
+  <tbody>
+    <tr>
+      <td style={{ padding: '15px', border: '1px solid #ddd' }}>Temperature:</td>
+      <td style={{ padding: '15px', border: '1px solid #ddd' }}>{data.main.temp} °C</td>
+    </tr>
+    <tr>
+      <td style={{ padding: '15px', border: '1px solid #ddd' }}>Weather:</td>
+      <td style={{ padding: '15px', border: '1px solid #ddd' }}>{data.weather[0].description}</td>
+    </tr>
+    <tr>
+      <td style={{ padding: '15px', border: '1px solid #ddd' }}>Humidity:</td>
+      <td style={{ padding: '15px', border: '1px solid #ddd' }}>{data.main.humidity} %</td>
+    </tr>
+    <tr>
+      <td style={{ padding: '15px', border: '1px solid #ddd' }}>Wind Speed:</td>
+      <td style={{ padding: '15px', border: '1px solid #ddd' }}>{data.wind.speed} m/s</td>
+    </tr>
+    <tr>
+      <td style={{ padding: '15px', border: '1px solid #ddd' }}>Pressure:</td>
+      <td style={{ padding: '15px', border: '1px solid #ddd' }}>{data.main.pressure} hPa</td>
+    </tr>
+  </tbody>
+</table>
+
+
     </div>
   );
 };
